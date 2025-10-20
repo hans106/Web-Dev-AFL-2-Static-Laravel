@@ -1,0 +1,120 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .content-wrapper {
+            flex-grow: 1;
+        }
+
+        .navbar-custom {
+            background: linear-gradient(90deg, #852902 0%, #007bff 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #039dbc;
+            /* Garis bawah tipis */
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-weight: 800;
+            transition: color 0.3s ease;
+            color: white;
+            line-height: 1;
+        }
+
+        .navbar-brand:hover {
+            color: #87a4aa;
+        }
+
+        .nav-link {
+            font-weight: 800;
+            transition: color 0.3s ease;
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: #87a4aa;
+        }
+
+        .footer-custom {
+            background: linear-gradient(180deg, #2c3e50 0%, #1c2833 100%);
+            color: #f8f9fa;
+            /* Teks putih */
+            padding: 2.5rem 0;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        /* halaman portofolio */
+                .activity-card {
+            transition: transform 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card {
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .pengirim-testimoni-box {
+            background: linear-gradient(135deg, #1d475a 0%, #7E191B 100%);
+            border-radius: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .portfolio-showcase-card {
+            background-color: #f0f8ff;
+            /* Warna biru muda/cream */
+            border-left: 8px solid #007bff;
+            /* Garis aksen biru */
+            border-radius: 0.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-showcase-card img {
+            border-radius: 0 0.5rem 0.5rem 0;
+            /* Hanya sisi kanan yang bulat */
+            filter: grayscale(0.2);
+            /* Sedikit grayscale untuk kesan artistik */
+            transition: filter 0.3s ease;
+        }
+
+        .portfolio-showcase-card:hover img {
+            filter: grayscale(0);
+            /* Kembali berwarna penuh saat di-hover */
+        }
+
+        .portfolio-text-content {
+            padding: 2.5rem;
+        }

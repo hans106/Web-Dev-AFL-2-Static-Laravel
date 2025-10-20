@@ -1,0 +1,210 @@
+
+        /* CSS Main Layout */
+html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* CSS Kustom untuk Logo Card Gradien */
+        nav {
+            background: linear-gradient(135deg, #1d475a 0%, #7E191B 100%);
+        }
+
+        body {
+            background: linear-gradient(90deg, #008080 0%, #E34234 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-card-container {
+            /* Warna gradien yang serasi dengan navbar gelap, dengan aksen kuning/emas */
+            background: linear-gradient(135deg, #4f450e 0%, #927b20 70%, #edb408 100%);
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.6rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            /* Shadow untuk efek timbul */
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-card-container:hover {
+            box-shadow: 0 6px 20px rgba(255, 193, 7, 0.3);
+            /* Sedikit glow saat hover */
+        }
+
+        .logo-card-container img {
+            height: 64px;
+            /* Atur ukuran logo agar tidak terlalu besar */
+            width: auto;
+            /* Tambahkan filter untuk menjaga kontras logo dengan gradien gelap */
+            filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+        }
+
+        /* Memastikan elemen navbar-brand berada di tengah vertikal */
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .nav-item .nav-link {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .nav-item .nav-link:hover {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer {
+            background: linear-gradient(135deg, #1d475a 0%, #7E191B 100%);
+        }
+
+
+         /* Halaman Home */
+        .home-hero-card {
+            background-color: #2c3e50;
+            color: #ffffff;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            margin-top: 40px;
+            height: 65vh;
+            min-height: 480px;
+            margin: 0;
+            display: flex;
+            align-items: stretch;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .home-hero-card > .row {
+            width: 100%;
+            height: 100%;
+        }
+
+        .home-hero-card img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .home-hero-card:hover img {
+            opacity: 0.9;
+        }
+
+        .hero-text-content {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .hero-text-content h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            transition: font-size 0.3s ease;
+        }
+
+        .hero-text-content h2 {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            transition: font-size 0.3s ease;
+        }
+
+                /* Responsif di halaman home */
+        @media (max-width: 768px) {
+            .home-hero-card {
+                height: auto;
+                min-height: auto;
+            }
+
+            .hero-text-content {
+                padding: 2.5rem 2rem;
+                text-align: center;
+            }
+
+            .home-hero-card img {
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .hero-text-content h1 {
+                margin-bottom: 1rem;
+            }
+
+            .hero-text-content h2 {
+                margin-bottom: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.8rem 2rem;
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero-text-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .home-hero-card img {
+                height: 250px;
+            }
+
+            .btn {
+                padding: 0.7rem 1.8rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Halaman card product */
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid #e0e0e0;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #007bff;
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+
+        /* Card Animasi Toko dengan Pure CSS */
+        .store-feature-card {
+            background-color: #f0f4f8;
+            border: none;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .store-feature-card:hover {
+            box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .store-feature-card-img-container {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .store-image {
+            transition: all 0.5s ease-in-out;
+            filter: grayscale(0.1);
+            transform: scale(1);
+        }
+
+        .store-feature-card:hover .store-image {
+            transform: scale(1.05);
+            filter: grayscale(0);
+        }
